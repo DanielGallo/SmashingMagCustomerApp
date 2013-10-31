@@ -48,7 +48,7 @@ switch ($method) {
 	case "POST":	// New record
 		$postData = getPostData();
 		$Name = getPostValue($postData, 'Name');
-		$Address = getPostValue($postData, 'Notes');
+		$Address = getPostValue($postData, 'Address');
 
 		$sql = 	"INSERT INTO customer (Name, Address) " .
 				"VALUES ('$Name', '$Address')";
