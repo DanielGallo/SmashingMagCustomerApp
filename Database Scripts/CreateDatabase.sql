@@ -1,3 +1,9 @@
+/*
+	Running this script on a MySQL server instance will create a new database called customers. This will contain two tables, customer and customer_order.
+	
+	The customer table will contain basic details of a customer such as their name and address.  The customer_order table will hold order data for each customer, containing fields such as the date of each order and the total order value in US Dollars.
+*/
+
 CREATE DATABASE  IF NOT EXISTS `customers`; 
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
